@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import User from './components/User';
 
 class App extends React.Component {
 
@@ -19,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>{this.state.userData.login}</h1>
+        <User user={this.state.userData} />
       </div>
     );
   }
