@@ -6,11 +6,13 @@ import React from 'react';
 const User = props => {
 
     return(
-        <div>
-            <img src={props.user.avatar_url} />
-            <h2>{props.user.name}</h2>
-            <h3>{props.user.location}</h3>
-            <p>{props.user.bio}</p>
+        <div className="user">
+            <img src={props.user.avatar_url} alt={props.user.login} />
+            <div className="user-info">
+                <h3>{props.user.name}</h3>
+                <h4>{props.user.location}</h4>
+                <p>{props.user.bio}</p>
+            </div>
         </div>
     )
 }

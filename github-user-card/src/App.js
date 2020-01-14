@@ -28,8 +28,10 @@ class App extends React.Component {
   // login, avatar_url , name , location , bio , followers , following
   render() {
     return (
-      <div>
+      <div className="app">
+        <h1>GitHub User Card Assignment</h1>
         <User user={this.state.userData} />
+        <h2>Followers</h2>
         <Followers follower={this.state.followersData} />
       </div>
     );
